@@ -486,8 +486,8 @@
     background: rgba(255,255,255,0.5);
     cursor: pointer;
   }
-  .active{
-    background: rgb(10, 10, 10) !important;
+  .active1{
+    background: white() !important;
   }
   /*-----------------------------------*\
    * #SERVICE
