@@ -108,7 +108,7 @@
     display: none;
   }
   .hero-span {
-    color: hsl(0, 100%, 100%);
+    color: hsl(0, 0%, 3%);
     text-transform: uppercase;
     font-weight: 700;
   }
