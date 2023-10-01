@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everleaf where nature comes home.</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="https://cdn.xxl.thumbs.canstockphoto.com/vector-illustration-of-cool-green-detailed-leaf-image_csp8020067.jpg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./product.css">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-search">
+        <input type="search" name="search" placeholder="Search Product..." class="input-field">
+
+        <button class="search-btn" aria-label="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/97d57b7e-c88a-4db7-8ed9-2903e5c5f0b5.jpg" alt="Everleaf logo" width="130" height="25">
+      </a>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label"></p><a href="signin.html">Sign In</a> 
+        </button>
+        <!-- <a href="Signin.html"></a> -->
+
+        <button class="header-action-btn">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Search</p>
+        </button>
+
+        <button class="header-action-btn">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+          <div class="btn-badge green" aria-hidden="true">3</div>
+
+          <p class="header-action-label"></p><a href="cart.html">Cart</a>
+
+        </button>
+
+        <button class="header-action-btn">
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Wishlist</p>
+
+          <div class="btn-badge" aria-hidden="true">2</div>
+        </button>
+
+      </div>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+         
+
+          <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+          
+          <!-- <li>
+            <a href="#" class="navbar-link">Shop</a>
+          </li> -->
+          <div class="dropdown">             
+            <button class="navbar-link">Shop</button>           
+              <div class="dropdown-content">           
+                    <a href="./plants.html">Plants</a>       
+                    <a href="./potters.html">Pots and Planters</a>            
+                    <a href="./plantcare.html">Plant Care</a>          
+                   <a href="./exotic.html">Exotic Plants</a>        
+                   <a href="./indoor.html">Indoor Plants</a>      
+                   <a href="./medicinal.html">Medicinal Plants</a>        
+               </div>        
+           </div>
+
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+    <div class="images">
+        <div>
+            <img src="./assets/images/lucky bamboo.webp" class="imageproduct">
+         </div> 
+        <div class="thumbnail-row">
+         <div>
+           <img class="thumbnail cursor" src="./assets/images/lucky bamboo.webp" onclick="displayslide()" alt="">
+         </div>
+         <div>
+           <img class="thumbnail cursor" src="./assets/images/lucky bamboo.webp" onclick="displayslide()" alt="">
+         </div>
+         <div>
+           <img class="thumbnail cursor" src="./assets/images/lucky bamboo.webp" onclick="displayslide()" alt="">
+         </div>
+         <div>
+           <img class="thumbnail cursor" src="./assets/images/lucky bamboo.webp" onclick="displayslide()" alt="">
+         </div>
+       </div> 
+    </div>
+    <div class="mobile-images">
+      <div class="mobile-slides fade">
+        <img src="./assets/images/lucky bamboo.webp" class="mobileimageproduct">
+     </div> 
+     <div class="mobile-slides fade">
+      <img src="./assets/images/lucky bamboo.webp" class="mobileimageproduct">
+     </div>  
+    <div class="mobile-slides fade">
+      <img src="./assets/images/lucky bamboo.webp" class="mobileimageproduct">
+    </div> 
+    <div class="mobile-slides fade">
+      <img src="./assets/images/lucky bamboo.webp" class="mobileimageproduct">
+    </div>
+    <div class="mobile-prev-btn" onclick="plusmobileSlides(-1)"><img src="./assets/images/icon-previous.svg" class="prev" alt=""></div>
+    <div class="mobile-next-btn" onclick="plusmobileSlides(1)"><img src="./assets/images/icon-next.svg" class="next" alt=""></div> 
+    </div>
+    </div>
+    <div class="hero">
+        <div>
+        <span class="hero-span">Everleaf</span>
+        <h1>Lucky Bamboo</h1>
+        <p class="hero-paragraph">Lucky bamboo is an indoor plant that is believed to bring good luck and prosperity. It is also considered good luck for businesses. 
+          .</p>
+        <div class="top"><div class="inner"><h2>250.00 </h2><h5 class="percent">50%</h5></div><h5 class="prev-price">$250.00</h5></div> 
+        <div class="display"><div class="values"><img src="./assets/images/icon-minus.svg" id="minus-btn" class="minus-btn">
+        <input type="button" class="value" id="value" value="0"><img src="./assets/images/icon-plus.svg" id="plus-btn" class="plus-btn"></div>
+        <button class="cart-btn"  id="addtocart"><img src="./assets/images/icon-cart.svg">Add to cart</button></div>
+    </div>
+    </div>
+</main>
+<!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
