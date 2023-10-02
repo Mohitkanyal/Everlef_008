@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everleaf where nature comes home.</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="https://cdn.xxl.thumbs.canstockphoto.com/vector-illustration-of-cool-green-detailed-leaf-image_csp8020067.jpg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./product.css">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="topnav">
+        <nav>
+            <ul>
+              <div class="mobile"><li><img src="./assets/images/icon-menu.svg" class="menu-icon" id="hamburger" alt=""></li>
+              <li><img src="./assets/images/Product.jpg" class="mobile-logo" alt="logo"></li></div>
+                <div class="nav-content">
+                <li><img src="https://www.simpleimageresizer.com/_uploads/photos/9b2ac544/97d57b7e-c88a-4db7-8ed9-2903e5c5f0b5_1_50.jpg" class="mobile-logo" class="logo" alt=""></li>                              
+                 <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+                <li>  <a href="./plants.html" class="navbar-link">Plants</a></li>
+                <li>  <a href="./index.html" class="navbar-link">Shop</a></li>
+                <li>  <a href="./index.html" class="navbar-link">Contact Us</a></li>
+                <li>  <a href="./index.html" class="navbar-link">Blog</a></li></div>
+                <div class="right-nav">
+                    <li><div class="container"><span id="cart-value" class="cart-value"></span></div>
+                      <img src="./assets/images/icon-cart.svg" class="cart" onclick="cart()" alt=""></li>
+                    <li><img src="/images/image-avatar.png" class="avatar" alt=""></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div id="mobile-menu" class="mobile-menu slide">
+      <div class="overlay"></div>
+      <div class="sidenav"><img src="./assets/images/icon-close.svg" id="close-menu" alt="">
+      <ul>
+            <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+          
+      <li>  <a href="./plants.html" class="navbar-link">Plants</a></li>
+                <li>  <a href="./index.html" class="navbar-link">Shop</a></li>
+                <li>  <a href="./index.html" class="navbar-link">Contact Us</a></li>
+                <li>  <a href="./index.html" class="navbar-link">Blog</a></li>
+      </ul></div>
+    </div>
+    <!-- empty cart --> 
+     <div class="cart-container"><div class="cart-content" id="empty-cart">
+     <h3>Cart</h3>
+     <span>Your cart is empty.</span>
+    </div></div>
+    <!-- cart -->
+    <div class="cart-container"><div class="product-cart" id="product-cart">
+      <h3>Cart</h3>
+      <div class="product">
+        <div><img src="./assets/images/Turmeric1.jpg" class="cart-product-image" alt="">
+        <div class="sub"><div><p class="big">Turmeric Plant</p> <p class="mob">......</p> </div>
+        <div class="cart-price"><p>150 x <input type="button" value="" id="number-selected" class="number-selected"></p>
+          <span id="price" class="price"></span></div></div> 
+        <img src="./assets/images/icon-delete.svg" id="delete-btn" class="delete-btn" alt=""></div>
+        <div><button class="checkout-btn">Checkout</button></div></div>
+      </div>
+    </div>
+
+
+
+  <main>
+    <div class="images">
+        <div>
+            <img src="./assets/images/Turmeric1.jpg" class="imageproduct">
+         </div> 
+        <div class="thumbnail-row">
+         <div>
+           <img class="thumbnail cursor" src="./assets/images/Turmeric1.jpg" onclick="displayslide()" alt="">
+         </div>
+         <div>
+           <img class="thumbnail cursor" src="./assets/images/Turmeric2.jpg" onclick="displayslide()" alt="">
+         </div>
+         <div>
+           <img class="thumbnail cursor" src="./assets/images/Turmeric3.jpg" onclick="displayslide()" alt="">
+         </div>
+         <div>
+           <img class="thumbnail cursor" src="./assets/images/Turmeric4.jpg" onclick="displayslide()" alt="">
+         </div>
+       </div> 
+    </div>
+    <div class="mobile-images">
+      <div class="mobile-slides fade">
+        <img src="./assets/images/Turmeric1.jpg" class="mobileimageproduct">
+     </div> 
+     <div class="mobile-slides fade">
+      <img src="./assets/images/Turmeric2.jpg" class="mobileimageproduct">
+     </div>  
+    <div class="mobile-slides fade">
+      <img src="./assets/images/Turmeric3.jpg" class="mobileimageproduct">
+    </div> 
+    <div class="mobile-slides fade">
+      <img src="./assets/images/Turmeric4.jpg" class="mobileimageproduct">
+    </div>
+    <div class="mobile-prev-btn" onclick="plusmobileSlides(-1)"><img src="./assets/images/icon-previous.svg" class="prev" alt=""></div>
+    <div class="mobile-next-btn" onclick="plusmobileSlides(1)"><img src="./assets/images/icon-next.svg" class="next" alt=""></div> 
+    </div>
+    </div>
+    <div class="hero">
+        <div>
+        <span class="hero-span">Everleaf</span>
+        <h1>Turmeric plant</h1>
+        <p class="hero-paragraph">Turmeric or Curcuma longa, is a flowering plant in the ginger family Zingiberaceae. It is a perennial, rhizomatous, herbaceous plant native to the Indian subcontinent and Southeast Asia that requires temperatures between 20 and 30 °C and high annual rainfall to thrive.  
+          </p>
+        <div class="top"><div class="inner"><h2>150.00 </h2><h5 class="percent">50%</h5></div><h5 class="prev-price">$250.00</h5></div> 
+        <div class="display"><div class="values"><img src="./assets/images/icon-minus.svg" id="minus-btn" class="minus-btn">
+        <input type="button" class="value" id="value" value="0"><img src="./assets/images/icon-plus.svg" id="plus-btn" class="plus-btn"></div>
+        <button class="cart-btn"  id="addtocart"><img src="./assets/images/icon-cart.svg">Add to cart</button></div>
+    </div>
+    </div>
+</main>
+   <aside>
+        <div class="overlay"></div>
+        <div class="over-display">
+          <img src="./assets/images/icon-close.svg" class="close-icon" onclick="displayslide()" id="close" alt="">
+            <div class="mySlides">
+                <img src="./assets/images/Turmeric1.jpg" class="imageproduct2">
+             </div> 
+             <div class="mySlides">
+              <img src="./assets/images/Turmeric2.jpg" class="imageproduct2">
+             </div>  
+            <div class="mySlides">
+              <img src="./assets/images/Turmeric3.jpg" class="imageproduct2">
+            </div> 
+            <div class="mySlides">
+              <img src="./assets/images/Turmeric4.jpg" class="imageproduct2">
+            </div>
+            <div class="prev-btn" onclick="plusSlides(-1)"><img src="./assets/images/icon-previous.svg" class="prev" alt=""></div>
+            <div class="next-btn" onclick="plusSlides(1)"><img src="./assets/images/icon-next.svg" class="next" alt=""></div>
+            <div class="row">
+             <div class="column">
+               <img class="demo cursor" src="./assets/images/Turmeric1.jpg" onclick="currentSlide(1)" alt="">
+             </div>
+             <div class="column">
+               <img class="demo cursor" src="./assets/images/Turmeric2.jpg" onclick="currentSlide(2)" alt="">
+             </div>
+             <div class="column">
+               <img class="demo cursor" src="./assets/images/Turmeric3.jpg" onclick="currentSlide(3)" alt="">
+             </div>
+             <div class="column">
+               <img class="demo cursor" src="./assets/images/Turmeric4.jpg" onclick="currentSlide(4)" alt="">
+             </div>
+           </div> 
+        </div>
+    </aside>
+
+  
+  
+<script src="./product.js"></script>
+ 
+
+</body>
+</html>
