@@ -675,12 +675,12 @@
   .close-icon {
     position: absolute;
     right: 0;
-    top: -5%;
-    color: white;
+    top: -4%;
+    color: black;
     cursor: pointer;
     z-index: 1;
     filter: brightness(0) invert(1);
-    margin-top: 75px;
+    margin-top: 80px;
   }
   .close-icon:hover {
     filter: invert(58%) sepia(50%) saturate(3283%) hue-rotate(348deg) brightness(102%) contrast(101%);
