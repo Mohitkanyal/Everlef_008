@@ -1,406 +1,1242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indoor Plants</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <!-- 
-    - #HEADER
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plants | Everleaf</title>
+
+  <!-- 
+    - favicon
   -->
+  <link rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/svg+xml">
 
-  <header class="header" data-header>
-    <div class="container">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/plants.css">
 
-      <div class="overlay" data-overlay></div>
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-      <div class="header-search">
-        <input type="search" name="search" placeholder="Search Product..." class="input-field">
-
-        <button class="search-btn" aria-label="Search">
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-      </div>
-
-      <a href="#" class="logo">
-        <img src="./assets/images/97d57b7e-c88a-4db7-8ed9-2903e5c5f0b5.jpg" alt="Everleaf logo" width="130" height="25">
-      </a>
-
-      <div class="header-actions">
-
-        <button class="header-action-btn">
-          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-          <p class="header-action-label"></p><a href="signin.html">Sign In</a> 
-        </button>
-        <!-- <a href="Signin.html"></a> -->
-
-        <button class="header-action-btn">
-          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-
-          <p class="header-action-label">Search</p>
-        </button>
-
-        <button class="header-action-btn">
-          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
-          <div class="btn-badge green" aria-hidden="true">3</div>
-
-          <p class="header-action-label"></p><a href="cart.html">Cart</a>
-
-        </button>
-
-        <button class="header-action-btn">
-          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-
-          <p class="header-action-label">Wishlist</p>
-
-          <div class="btn-badge" aria-hidden="true">2</div>
-        </button>
-
-      </div>
-
-      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-
-         
-
-          <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-            <ion-icon name="close-outline"></ion-icon>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+    
+          <div class="overlay" data-overlay></div>
+    
+          <div class="header-search">
+            <input type="search" name="search" placeholder="Search Product..." class="input-field">
+    
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+    
+          <a href="#" class="logo">
+            <img src="./assets/images/97d57b7e-c88a-4db7-8ed9-2903e5c5f0b5.jpg" alt="Everleaf logo" width="130" height="25">
+          </a>
+    
+          <div class="header-actions">
+    
+            <button class="header-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label"></p><a href="Sigin.html">Sign In</a> 
+            </button>
+            <!-- <a href="Signin.html"></a> -->
+    
+            <button class="header-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Search</p>
+            </button>
+    
+            <button class="header-action-btn">
+              <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Cart</p>
+    
+              <div class="btn-badge green" aria-hidden="true">3</div>
+            </button>
+    
+            <button class="header-action-btn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Wishlist</p>
+    
+              <div class="btn-badge" aria-hidden="true">2</div>
+            </button>
+    
+          </div>
+    
+          <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
+    
+          <nav class="navbar" data-navbar>
+    
+            <div class="navbar-top">
+    
+             
+    
+              <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+    
+            </div>
+    
+            <ul class="navbar-list">
+    
+              <li>
+                <a href="./index.html" class="navbar-link">Home</a>
+              </li>
+              
+              
+              <div class="dropdown">             
+                <button class="navbar-link">Shop</button>           
+                  <div class="dropdown-content">           
+                        <a href="./Plants.html">Plants</a>       
+                        <a href="#Pots and Planters">Pots and Planters</a>            
+                        <a href="#Plant Care">Plant Care</a>          
+                       <a href="#Exotic Plants">Exotic Plants</a>        
+                       <a href="#Indoor Plants">Indoor Plants</a>      
+                       <a href="#Medicinal Plants">Medicinal Plants</a>        
+                   </div>        
+               </div>
+    
+              <li>
+                <a href="#" class="navbar-link">About</a>
+              </li>
+    
+              <li>
+                <a href="#blog" class="navbar-link">Blog</a>
+              </li>
+    
+              <li>
+                <a href="#" class="navbar-link">Contact Us</a>
+              </li>
+    
+            </ul>
+    
+          </nav>
+    
+        </div>
+      </header>
+    
+    
+    
+    
+    
+      <main>
+        <article>
+
+
+            <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product">
+        <div class="container">
+
+          <!-- <h2 class="h2 section-title">Products of the week</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn  active">Best Seller</button>
+            </li>
+
+           
+           
+
+            <li>
+              <button class="filter-btn">Trendy</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">New Arrival</button>
+            </li>
+
+          </ul> -->
+
+          <ul class="product-list">
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="./luxkybamboo.html">
+                    <img src="./assets/images/lucky bamboo plant with background white (1).jpg" alt="Lucky Bamboo" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge red"> -20%</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="./luxkybamboo.html">Lucky Bamboo</a>
+                    
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="240">&#x20b9;240</data>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="./moneyplant.html">
+                    <img src="./assets/images/money plant with background white.jpg" alt="Money plant" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge green"> New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Wishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="./moneyplant.html">Money Plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                   <data value="250">&#x20b9;250</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="./peacelily.html">
+                    <img src="./assets/images/peace lily plant in a pot with background white (1).jpg" alt="Peace lily" loading="lazy"
+                      width="800" height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="peacelily.html">Peace lily plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="250">&#x20b9;250</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="zz.html">
+                    <img src="./assets/images/zz plant in a pot with background white (1).jpg" alt="ZZ" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="zz.html">ZZ plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="300">&#x20b9;300</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+           
+           
+          </ul>
+<!-- 
+          <button class="btn btn-outline">View All Products</button> -->
 
         </div>
+      </section>
 
-        <ul class="navbar-list">
+<!-- 
+        - #PRODUCT
+      -->
 
-          <li>
-            <a href="#home" class="navbar-link">Home</a>
-          </li>
+      <section class="section product">
+        <div class="container">
+
+          <!-- <h2 class="h2 section-title">Products of the week</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn  active">Best Seller</button>
+            </li>
+
+           
+           
+
+            <li>
+              <button class="filter-btn">Trendy</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">New Arrival</button>
+            </li>
+
+          </ul> -->
+
+          <ul class="product-list">
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="songofindia.html">
+                    <img src="./assets/images/song of india plant in a pot with background white  (2) (1).jpg" alt="Song Of India" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge red"> -20%</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="songofindia.html">Song Of India</a>
+                    
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="240">&#x20b9;240</data>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="aralia.html">
+                    <img src="./assets/images/aralia  plant in a pot with background white (1).jpg" alt="Money plant" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge green"> New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Wishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="aralia.html">Aralia Plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                   <data value="250">&#x20b9;250</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="jade.html">
+                    <img src="./assets/images/jade  plant in a pot with background white (1).jpg" alt="Jade plant" loading="lazy"
+                      width="800" height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="jade.html">Jade plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="250">&#x20b9;250</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="areca.html">
+                    <img src="./assets/images/areca palm plant in a pot with background white (1).jpg" alt="Areca Palm" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="areca.html">Areca Palm</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="300">&#x20b9;300</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+           
+           
+          </ul>
+<!-- 
+          <button class="btn btn-outline">View All Products</button> -->
+
+        </div>
+      </section>
+
+<!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product">
+        <div class="container">
+
+          <!-- <h2 class="h2 section-title">Products of the week</h2> -->
+
+          <ul class="filter-list">
+
+            <!-- <li>
+              <button class="filter-btn  active">Best Seller</button>
+            </li>
+
+           
+           
+
+            <li>
+              <button class="filter-btn">Trendy</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">New Arrival</button>
+            </li> -->
+
+          </ul>
+
+          <ul class="product-list">
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="stromathe.html">
+                    <img src="./assets/images/stromanthe triostar plant in a pot with background white (1).jpg" alt="stromanthe triostar" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge red"> -20%</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="stromathe.html">Stromanthe Triostar Plant</a>
+                    
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="240">&#x20b9;240</data>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="ficusbonsai.html">
+                    <img src="./assets/images/ficus bonsai plant in a pot with background white (1).jpg" alt="ficus bonsai" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge green"> New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Wishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="ficusbonsai.html">Ficus Bonsai</a>
+                  </h3>
+
+                  <div class="card-price">
+                   <data value="250">&#x20b9;250</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="leongrass.html">
+                    <img src="./assets/images/lemongrass plant in a pot with background white (1).jpg" alt="lemongrass plant" loading="lazy"
+                      width="800" height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="leongrass.html">Lemongrass Plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="250">&#x20b9;250</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="thuja.html">
+                    <img src="./assets/images/thuja plant in a pot with background white (1).jpg" alt="thuja" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="thuja.html">Thuja plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="300">&#x20b9;300</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+           
+           
+          </ul>
+
+
+
+
+
+
+          <!-- <button class="btn btn-outline">View All Products</button> -->
+
+        </div>
+      </section>
+
+<section class="section product">
+        <div class="container">
+
+          <!-- <h2 class="h2 section-title">Products of the week</h2> -->
+
+          <ul class="filter-list">
+
+            <!-- <li>
+              <button class="filter-btn  active">Best Seller</button>
+            </li>
+
+           
+           
+
+            <li>
+              <button class="filter-btn">Trendy</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">New Arrival</button>
+            </li> -->
+
+          </ul>
+
+          <ul class="product-list">
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="snake.html">
+                    <img src="./assets/images/snake plant in a pot with background white (1).jpg" alt="snake plant" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge red"> -20%</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="snake.html">Snake Plant</a>
+                    
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="240">&#x20b9;240</data>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="cactus.html">
+                    <img src="./assets/images/cactus plant in a pot with background white .jpg" alt="cactus plant" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge green"> New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Wishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="cactus.html">Cactus Plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                   <data value="250">&#x20b9;250</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="fern.html">
+                    <img src="./assets/images/_fern plant in a pot with background white  (1).jpg" alt="ferns plant" loading="lazy"
+                      width="800" height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="fern.html">Fern Plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="250">&#x20b9;250</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="hearthoya.html">
+                    <img src="./assets/images/heart hoya plant in a pot with background white  (1).jpg" alt="heart hoya plant" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="hearthoya.html">Heart Hoya plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="300">&#x20b9;300</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+           
+           
+          </ul>
+
+
+
+
           
-          <!-- <li>
-            <a href="#" class="navbar-link">Shop</a>
-          </li> -->
-          <div class="dropdown">             
-            <button class="navbar-link">Shop</button>           
-              <div class="dropdown-content">           
-                    <a href="./plants.html">Plants</a>       
-                    <a href="./potters.html">Pots and Planters</a>            
-                    <a href="./plantcare.html">Plant Care</a>          
-                   <a href="./exotic.html">Exotic Plants</a>        
-                   <a href="./indoor.html">Indoor Plants</a>      
-                   <a href="./medicinal.html">Medicinal Plants</a>        
-               </div>        
-           </div>
 
-          <li>
-            <a href="#" class="navbar-link">About</a>
-          </li>
+          <!-- <button class="btn btn-outline">View All Products</button> -->
 
-          <li>
-            <a href="#blog" class="navbar-link">Blog</a>
-          </li>
+        </div>
+      </section>
 
-          <li>
-            <a href="#" class="navbar-link">Contact Us</a>
-          </li>
 
-        </ul>
+      <section class="section product">
+        <div class="container">
 
-      </nav>
+          <!-- <h2 class="h2 section-title">Products of the week</h2> -->
 
-    </div>
-  </header>
-    <ul class="product-list">
+          <ul class="filter-list">
 
-        <li>
-          <div class="product-card">
+            <!-- <li>
+              <button class="filter-btn  active">Best Seller</button>
+            </li>
 
-            <figure class="card-banner">
+           
+           
 
-              <a href="#">
-                <img src="../assets/images/lucky bamboo.webp" alt="Lucky Bamboo" loading="lazy" width="800"
-                  height="1034" class="w-100">
-              </a>
+            <li>
+              <button class="filter-btn">Trendy</button>
+            </li>
 
-              <div class="card-badge green"> New</div>
+            <li>
+              <button class="filter-btn">New Arrival</button>
+            </li> -->
 
-              <div class="card-actions">
+          </ul>
 
-                <button class="card-action-btn" aria-label="Quick view">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
+          <ul class="product-list">
 
-                <button class="card-action-btn cart-btn">
-                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+            <li>
+              <div class="product-card">
 
-                  <p>Add to Cart</p>
-                </button>
+                <figure class="card-banner">
 
-                <button class="card-action-btn" aria-label="Add to Whishlist">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
+                  <a href="calathea.html">
+                    <img src="./assets/images/Calathea Burle Marxii plant in a pot with background white  (1).jpg" alt="Calathea Burle Marxii " loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge red"> -20%</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="calathea.html">Calathea Burle Marxii Plant</a>
+                    
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="240">&#x20b9;240</data>
+
+                  </div>
+                </div>
 
               </div>
+            </li>
 
-            </figure>
+            <li>
+              <div class="product-card">
 
-            <div class="card-content">
-              <h3 class="h4 card-title">
-                <a href="LuckyBamboo.html">Lucky Bamboo</a>
-                
-              </h3>
+                <figure class="card-banner">
 
-              <div class="card-price">
-                <data value="240">&#x20b9;240</data>
+                  <a href="darasingh.html">
+                    <img src="./assets/images/Draceana Dara Singh plant in a pot with background white  (1).jpg" alt="Draceana Dara Singh" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge green"> New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Wishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="darasingh.html">Draceana Dara Singh Plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                   <data value="250">&#x20b9;250</data>
+                  </div>
+                </div>
 
               </div>
-            </div>
+            </li>
 
-          </div>
-        </li>
+            <li>
+              <div class="product-card">
 
-        <li>
-          <div class="product-card">
+                <figure class="card-banner">
 
-            <figure class="card-banner">
+                  <a href="aloestar.html">
+                    <img src="./assets/images/aloe vera star plant in a pot with background white  (1).jpg" alt="aloe vera star plant" loading="lazy"
+                      width="800" height="1034" class="w-100">
+                  </a>
 
-              <a href="#">
-                <img src="./assets/images/money plnat.webp" alt="Money plant" loading="lazy" width="800"
-                  height="1034" class="w-100">
-              </a>
+                  <div class="card-actions">
 
-              <div class="card-badge green"> New</div>
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
 
-              <div class="card-actions">
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                <button class="card-action-btn" aria-label="Quick view">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
+                      <p>Add to Cart</p>
+                    </button>
 
-                <button class="card-action-btn cart-btn">
-                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
 
-                  <p>Add to Cart</p>
-                </button>
+                  </div>
 
-                <button class="card-action-btn" aria-label="Add to Wishlist">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="aloestar.html">Aloe Vera Star Plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="250">&#x20b9;250</data>
+                  </div>
+                </div>
 
               </div>
+            </li>
 
-            </figure>
+            <li>
+              <div class="product-card">
 
-            <div class="card-content">
-              <h3 class="h4 card-title">
-                <a href="#">Money Plant</a>
-              </h3>
+                <figure class="card-banner">
 
-              <div class="card-price">
-               <data value="250">&#x20b9;250</data>
-              </div>
-            </div>
+                  <a href="#">
+                    <img src="./assets/images/thuja plant in a pot with background white (1).jpg" alt="thuja" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
 
-          </div>
-        </li>
-        <li>
-            <div class="product-card">
-  
-              <figure class="card-banner">
-  
-                <a href="#">
-                  <img src="./assets/images/Pachyphytum Compactum.jpg" alt="Pachyphytum Compactum" loading="lazy" width="800"
-                    height="1034" class="w-100">
-                </a>
-  
-                <div class="card-badge red"> New</div>
-  
-                <div class="card-actions">
-  
-                  <button class="card-action-btn" aria-label="Quick view">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-  
-                  <button class="card-action-btn cart-btn">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-  
-                    <p>Add to Cart</p>
-                  </button>
-  
-                  <button class="card-action-btn" aria-label="Add to Whishlist">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-  
-                </div>
-  
-              </figure>
-  
-              <div class="card-content">
-                <h3 class="h4 card-title">
-                  <a href="#">Pachyphytum Compactum</a>
-                  
-                </h3>
-  
-                <div class="card-price">
-                  <data value="240">&#x20b9;500</data>
-  
-                </div>
-              </div>
-  
-            </div>
-          </li>
-  
-          <li>
-            <div class="product-card">
-  
-              <figure class="card-banner">
-  
-                <a href="#">
-                  <img src="./assets/images/Peperomia.jpg" alt="Peperomia Obtusifolia" loading="lazy" width="800"
-                    height="1034" class="w-100">
-                </a>
-  
-                <div class="card-badge green"> New</div>
-  
-                <div class="card-actions">
-  
-                  <button class="card-action-btn" aria-label="Quick view">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-  
-                  <button class="card-action-btn cart-btn">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-  
-                    <p>Add to Cart</p>
-                  </button>
-  
-                  <button class="card-action-btn" aria-label="Add to Wishlist">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-  
-                </div>
-  
-              </figure>
-  
-              <div class="card-content">
-                <h3 class="h4 card-title">
-                  <a href="#">Peperomia Obtusifolia</a>
-                </h3>
-  
-                <div class="card-price">
-                 <data value="250">&#x20b9;350</data>
-                </div>
-              </div>
-  
-            </div>
-          </li>
-          <li>
-            <div class="product-card">
-  
-              <figure class="card-banner">
-  
-                <a href="#">
-                  <img src="../assets/images/Tulsi.webp" alt="Tulsi" loading="lazy" width="800"
-                    height="1034" class="w-100">
-                </a>
-  
-                <div class="card-badge red"> New</div>
-  
-                <div class="card-actions">
-  
-                  <button class="card-action-btn" aria-label="Quick view">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-  
-                  <button class="card-action-btn cart-btn">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-  
-                    <p>Add to Cart</p>
-                  </button>
-  
-                  <button class="card-action-btn" aria-label="Add to Whishlist">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-  
-                </div>
-  
-              </figure>
-  
-              <div class="card-content">
-                <h3 class="h4 card-title">
-                  <a href="#">Tulsi</a>
-                  
-                </h3>
-  
-                <div class="card-price">
-                  <data value="240">&#x20b9;259</data>
-  
-                </div>
-              </div>
-  
-            </div>
-          </li>
-  
-          <li>
-            <div class="product-card">
-  
-              <figure class="card-banner">
-  
-                <a href="#">
-                  <img src="./assets/images/Aloevera.webp" alt="Aloe Vera" loading="lazy" width="800"
-                    height="1034" class="w-100">
-                </a>
-                <div class="card-badge red"> New</div>
-                <div class="card-badge green"> New</div>
-  
-                <div class="card-actions">
-  
-                  <button class="card-action-btn" aria-label="Quick view">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-  
-                  <button class="card-action-btn cart-btn">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-  
-                    <p>Add to Cart</p>
-                  </button>
-  
-                  <button class="card-action-btn" aria-label="Add to Wishlist">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-  
-                </div>
-  
-              </figure>
-  
-              <div class="card-content">
-                <h3 class="h4 card-title">
-                  <a href="#">Aloe Vera</a>
-                </h3>
-  
-                <div class="card-price">
-                 <data value="250">&#x20b9;159</data>
-                </div>
-              </div>
-  
-            </div>
-          </li>
+                  <div class="card-actions">
 
-</ul>
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Thuja plant</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="300">&#x20b9;300</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+           
+           
+          </ul>
+
+
+
+
           
 
-</div>
-</section>
+          <!-- <button class="btn btn-outline">View All Products</button> -->
+
+        </div>
+      </section>
+
+
     
-  <!-- 
+    
+    <!-- 
     - #FOOTER
   -->
 
@@ -564,12 +1400,7 @@
     </div>
 
   </footer>
-
-
-
-
-
-  <!-- 
+<!-- 
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
