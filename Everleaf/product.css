@@ -680,7 +680,7 @@
     cursor: pointer;
     z-index: 1;
     filter: brightness(0) invert(1);
-    margin-top: 65px;
+    margin-top: 70px;
   }
   .close-icon:hover {
     filter: invert(58%) sepia(50%) saturate(3283%) hue-rotate(348deg) brightness(102%) contrast(101%);
