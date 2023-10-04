@@ -1,0 +1,613 @@
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./product.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-search">
+        <input type="search" name="search" placeholder="Search Product..." class="input-field">
+
+        <button class="search-btn" aria-label="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/97d57b7e-c88a-4db7-8ed9-2903e5c5f0b5.jpg" alt="Everleaf logo" width="130" height="25">
+      </a>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label"></p><a href="Sigin.html">Sign In</a> 
+        </button>
+        <!-- <a href="Signin.html"></a> -->
+
+        <button class="header-action-btn">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Search</p>
+        </button>
+
+        <button class="header-action-btn">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label"></p><a href="cart.html">Cart</a>
+
+          <div class="btn-badge green" aria-hidden="true">3</div>
+        </button>
+
+        <button class="header-action-btn">
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Wishlist</p>
+
+          <div class="btn-badge" aria-hidden="true">2</div>
+        </button>
+
+      </div>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+         
+
+          <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+    
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+          
+          <!-- <li>
+            <a href="#" class="navbar-link">Shop</a>
+          </li> -->
+          <div class="dropdown">             
+            <button class="navbar-link">Shop</button>           
+              <div class="dropdown-content">           
+                    <a href="./plants.html">Plants</a>       
+                    <a href="./potters.html">Pots and Planters</a>            
+                    <a href="./plantcare.html">Plant Care</a>          
+                   <a href="./Air.html">Air purifying Plants</a>        
+                   <a href="./indoor.html">Indoor Plants</a>      
+                   <a href="./medicinal.html">Medicinal Plants</a>        
+               </div>        
+           </div>
+
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+  </div>
+  </header>
+  <main>
+        <div class="images">
+            <div>
+                <img src="./assets/images/Marginata1.jpg" class="imageproduct">
+             </div> 
+            <div class="thumbnail-row">
+             <div>
+               <img class="thumbnail cursor" src="./assets/images/Marginata1.jpg" onclick="displayslide()" alt="">
+             </div>
+             <div>
+               <img class="thumbnail cursor" src="./assets/images/Marginata2.jpg" onclick="displayslide()" alt="">
+             </div>
+             <div>
+               <img class="thumbnail cursor" src="./assets/images/Marginata3.jpg" onclick="displayslide()" alt="">
+             </div>
+             <div>
+               <img class="thumbnail cursor" src="./assets/images/Marginata4.jpg" onclick="displayslide()" alt="">
+             </div>
+           </div> 
+        </div>
+        <div class="mobile-images">
+            <div class="mobile-slides fade">
+              <img src="./assets/images/Marginata1.jpg" class="mobileimageproduct">
+           </div> 
+           <div class="mobile-slides fade">
+            <img src="./assets/images/Marginata1.jpg" class="mobileimageproduct">
+           </div>  
+          <div class="mobile-slides fade">
+            <img src="./assets/images/Marginata2.jpg" class="mobileimageproduct">
+          </div> 
+          <div class="mobile-slides fade">
+            <img src="./assets/images/Marginata3.jpg" class="mobileimageproduct">
+          </div>
+            <div class="mobile-slides fade">
+            <img src="./assets/images/Marginata4.jpg" class="mobileimageproduct">
+          </div>
+          <div class="mobile-prev-btn" onclick="plusmobileSlides(-1)"><img src="./assets/images/icon-previous.svg" class="prev" alt=""></div>
+          <div class="mobile-next-btn" onclick="plusmobileSlides(1)"><img src="./assets/images/icon-next.svg" class="next" alt=""></div> 
+          </div>
+          </div>
+    <div class="hero">
+            <div>
+            <span class="hero-span"></span>
+            <h1>Marginata Plant</h1>
+            <p class="hero-paragraph">
+              .</p>
+            <div class="top"><div class="inner"><h2>₹500.00 </h2><h5 class="percent"></h5></div><h5 class="prev-price"></h5></div> 
+            <div class="display"><div class="values"><img src="./assets/images/icon-minus.svg" id="minus-btn" class="minus-btn">
+            <input type="button" class="value" id="value" value="0"><img src="./assets/images/icon-plus.svg" id="plus-btn" class="plus-btn"></div>
+            <button class="cart-btn"  id="addtocart"><img src="./assets/images/icon-cart.svg">Add to cart</button></div>
+             </div>
+    </div>
+</main>
+<aside>
+        <div class="overlay1"></div>
+        <div class="over-display">
+          <img src="./assets/images/icon-close.svg" class="close-icon" onclick="displayslide()" id="close" alt="">
+            <div class="mySlides">
+                <img src="./assets/images/Marginata1.jpg" class="imageproduct2">
+             </div> 
+             <div class="mySlides">
+              <img src="./assets/images/Marginata2.jpg" class="imageproduct2">
+             </div>  
+            <div class="mySlides">
+              <img src="./assets/images/Marginata3.jpg" class="imageproduct2">
+            </div> 
+            <div class="mySlides">
+              <img src="./assets/images/Marginata4.jpg" class="imageproduct2">
+            </div>
+            <div class="prev-btn" onclick="plusSlides(-1)"><img src="./assets/images/icon-previous.svg" class="prev" alt=""></div>
+            <div class="next-btn" onclick="plusSlides(1)"><img src="./assets/images/icon-next.svg" class="next" alt=""></div>
+            <div class="row">
+             <div class="column">
+               <img class="demo cursor" src="./assets/images/Marginata1.jpg" onclick="currentSlide(1)" alt="">
+             </div>
+             <div class="column">
+               <img class="demo cursor" src="./assets/images/Marginata2.jpg" onclick="currentSlide(2)" alt="">
+             </div>
+             <div class="column">
+               <img class="demo cursor" src="./assets/images/Marginata3.jpg" onclick="currentSlide(3)" alt="">
+             </div>
+             <div class="column">
+               <img class="demo cursor" src="./assets/images/Marginata4.jpg" onclick="currentSlide(4)" alt="">
+             </div>
+           </div> 
+        </div>
+    </aside>
+  <section class="info">
+<div class="box1">
+<img src="./assets/images/info1.webp">
+<h2>Water Twice A Week</h2>
+
+<p>Always check your plants before watering, the topsoil should be dry to touch. For succulents allow the potting mix to dry completely before watering again.</p>
+
+
+</div>
+</section>
+
+
+
+<section class="info2">
+    <div class="box2">
+        <img src="./assets/images/info2.png">
+    <h2>Needs Bright Indirect Sunlight</h2>
+    <p>Place your plants on window sills where it can get the brightest possible indirect light. Bright indirect light is when the plant is within a couple of feet of a natural source of light.</p>
+</div>
+</section>
+
+<section class="info3">
+    <div class="box3">
+        <img src="./assets/images/info3.avif">
+    <h2>Beginner Friendly </h2>
+
+    <p>If you are a new gardener this is a great choice for you. The plant will thrive in your journey to learn gardening with trials and errors.</p>
+</div>
+</section>
+
+<div class="head">
+
+    <h1>Customers Also Bought</h1>
+
+
+</div>
+<ul class="product-list">
+
+    <li>
+      <div class="product-card">
+
+        <figure class="card-banner">
+
+          <a href="./assets/jade.html">
+            <img src="./assets/images/jade  plant in a pot with background white (1).jpg" alt="Jade plant" loading="lazy" width="800"
+              height="1034" class="w-100">
+          </a>
+
+          <!-- <div class="card-badge red"> </div> -->
+
+          <div class="card-actions">
+
+            <button class="card-action-btn" aria-label="Quick view">
+              <ion-icon name="eye-outline"></ion-icon>
+            </button>
+
+            <button class="card-action-btn cart-btn">
+              <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+              <p>Add to Cart</p>
+            </button>
+
+            <button class="card-action-btn" aria-label="Add to Whishlist">
+              <ion-icon name="heart-outline"></ion-icon>
+            </button>
+
+          </div>
+
+        </figure>
+
+        <div class="card-content">
+          <h3 class="h4 card-title">
+            <a href="#">Jade Plant</a>
+            
+          </h3>
+
+          <div class="card-price">
+            <data value="240">&#x20b9;240</data>
+
+          </div>
+        </div>
+
+      </div>
+    </li>
+
+    <li>
+      <div class="product-card">
+
+        <figure class="card-banner">
+
+          <a href="#">
+            <img src="./assets/images/money plant with background white.jpg" alt="Money plant" loading="lazy" width="800"
+              height="1034" class="w-100">
+          </a>
+
+          <div class="card-badge green"> New</div>
+
+          <div class="card-actions">
+
+            <button class="card-action-btn" aria-label="Quick view">
+              <ion-icon name="eye-outline"></ion-icon>
+            </button>
+
+            <button class="card-action-btn cart-btn">
+              <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+              <p>Add to Cart</p>
+            </button>
+
+            <button class="card-action-btn" aria-label="Add to Wishlist">
+              <ion-icon name="heart-outline"></ion-icon>
+            </button>
+
+          </div>
+
+        </figure>
+
+        <div class="card-content">
+          <h3 class="h4 card-title">
+            <a href="#">Money Plant</a>
+          </h3>
+
+          <div class="card-price">
+           <data value="250">&#x20b9;250</data>
+          </div>
+        </div>
+
+      </div>
+    </li>
+
+    <li>
+      <div class="product-card">
+
+        <figure class="card-banner">
+
+          <a href="#">
+            <img src="./assets/images/peace lily plant in a pot with background white (1).jpg" alt="Peace lily" loading="lazy"
+              width="800" height="1034" class="w-100">
+          </a>
+
+          <div class="card-actions">
+
+            <button class="card-action-btn" aria-label="Quick view">
+              <ion-icon name="eye-outline"></ion-icon>
+            </button>
+
+            <button class="card-action-btn cart-btn">
+              <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+              <p>Add to Cart</p>
+            </button>
+
+            <button class="card-action-btn" aria-label="Add to Whishlist">
+              <ion-icon name="heart-outline"></ion-icon>
+            </button>
+
+          </div>
+
+        </figure>
+
+        <div class="card-content">
+          <h3 class="h4 card-title">
+            <a href="#">Peace lily plant</a>
+          </h3>
+
+          <div class="card-price">
+            <data value="250">&#x20b9;250</data>
+          </div>
+        </div>
+
+      </div>
+    </li>
+
+    <li>
+      <div class="product-card">
+
+        <figure class="card-banner">
+
+          <a href="#">
+            <img src="./assets/images/zz plant in a pot with background white (1).jpg" alt="ZZ" loading="lazy" width="800"
+              height="1034" class="w-100">
+          </a>
+
+          <div class="card-actions">
+
+            <button class="card-action-btn" aria-label="Quick view">
+              <ion-icon name="eye-outline"></ion-icon>
+            </button>
+
+            <button class="card-action-btn cart-btn">
+              <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+              <p>Add to Cart</p>
+            </button>
+
+            <button class="card-action-btn" aria-label="Add to Whishlist">
+              <ion-icon name="heart-outline"></ion-icon>
+            </button>
+
+          </div>
+
+        </figure>
+
+        <div class="card-content">
+          <h3 class="h4 card-title">
+            <a href="#">ZZ plant</a>
+          </h3>
+
+          <div class="card-price">
+            <data value="300">&#x20b9;300</data>
+          </div>
+        </div>
+
+      </div>
+    </li>
+
+   
+   
+  </ul>
+
+   
+   <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logoeverleaf.svg" alt="logo">
+          </a>
+
+          <p class="footer-text">
+            Welcome to our plant paradise! Here you`ll find a wide selection of high-quality, locally sourced plants for any occasion.From decorative pots and planters to tropical and exotic plants, we have something for everyone.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Story</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Payment Type</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping Policy</a>
+          </li>
+
+  
+  
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">FAQS</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Category</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Indoor Plants</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Air Purifying Plants</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Exotic Plants</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Medicinal Plants</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gift Packs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pots</a>
+          </li>
+
+        </ul>
+          <div id="down1"></div>
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Get In Touch</p>
+          </li>
+
+         
+         
+          <li>
+            <a href="#" class="footer-link">Call: +91-7400-7400</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Email: contactus@everleaf.com</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href="#">Evearleaf</a>. All Rights Reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <div class="payment">
+          <p class="payment-title">We Support</p>
+
+          <img src="./assets/images/payment-img.png" alt="Online payment logos" class="payment-img">
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./product.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
