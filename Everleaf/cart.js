@@ -1,85 +1,108 @@
+let openShopping = document.querySelector('.shopping');
+let closeShopping = document.querySelector('.closeShopping');
+let list = document.querySelector('.list');
+let listCard = document.querySelector('.listCard');
+let body = document.querySelector('body');
+let total = document.querySelector('.total');
+let quantity = document.querySelector('.quantity');
 
-const product = [
-    {
-        id: 0,
-        image: 'image/gg-1.jpg',
-        title: 'Z Flip Foldable Mobile',
-        price: 120,
-    },
+openShopping.addEventListener('click', ()=>{
+    body.classList.add('active');
+})
+closeShopping.addEventListener('click', ()=>{
+    body.classList.remove('active');
+})
+
+let products = [
     {
         id: 1,
-        image: 'image/hh-2.jpg',
-        title: 'Air Pods Pro',
-        price: 60,
+        name: 'PRODUCT NAME 1',
+        image: '1.PNG',
+        price: 120000
     },
     {
         id: 2,
-        image: 'image/ee-3.jpg',
-        title: '250D DSLR Camera',
-        price: 230,
+        name: 'PRODUCT NAME 2',
+        image: '2.PNG',
+        price: 120000
     },
     {
         id: 3,
-        image: 'image/aa-1.jpg',
-        title: 'Head Phones',
-        price: 100,
+        name: 'PRODUCT NAME 3',
+        image: '3.PNG',
+        price: 220000
+    },
+    {
+        id: 4,
+        name: 'PRODUCT NAME 4',
+        image: '4.PNG',
+        price: 123000
+    },
+    {
+        id: 5,
+        name: 'PRODUCT NAME 5',
+        image: '5.PNG',
+        price: 320000
+    },
+    {
+        id: 6,
+        name: 'PRODUCT NAME 6',
+        image: '6.PNG',
+        price: 120000
     }
 ];
-const categories = [...new Set(product.map((item)=>
-    {return item}))]
-    let i=0;
-document.getElementById('root').innerHTML = categories.map((item)=>
-{
-    var {image, title, price} = item;
-    return(
-        `<div class='box'>
-            <div class='img-box'>
-                <img class='images' src=${image}></img>
-            </div>
-        <div class='bottom'>
-        <p>${title}</p>
-        <h2>$ ${price}.00</h2>`+
-        "<button onclick='addtocart("+(i++)+")'>Add to cart</button>"+
-        `</div>
-        </div>`
-    )
-}).join('')
-
-var cart =[];
-
-function addtocart(a){
-    cart.push({...categories[a]});
-    displaycart();
+let listCards  = [];
+function initApp(){
+    products.forEach((value, key) =>{
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('item');
+        newDiv.innerHTML = `
+            <img src="image/${value.image}">
+            <div class="title">${value.name}</div>
+            <div class="price">${value.price.toLocaleString()}</div>
+            <button onclick="addToCard(${key})">Add To Card</button>`;
+        list.appendChild(newDiv);
+    })
 }
-function delElement(a){
-    cart.splice(a, 1);
-    displaycart();
+initApp();
+function addToCard(key){
+    if(listCards[key] == null){
+        // copy product form list to list card
+        listCards[key] = JSON.parse(JSON.stringify(products[key]));
+        listCards[key].quantity = 1;
+    }
+    reloadCard();
 }
-
-function displaycart(){
-    let j = 0, total=0;
-    document.getElementById("count").innerHTML=cart.length;
-    if(cart.length==0){
-        document.getElementById('cartItem').innerHTML = "Your cart is empty";
-        document.getElementById("total").innerHTML = "$ "+0+".00";
+function reloadCard(){
+    listCard.innerHTML = '';
+    let count = 0;
+    let totalPrice = 0;
+    listCards.forEach((value, key)=>{
+        totalPrice = totalPrice + value.price;
+        count = count + value.quantity;
+        if(value != null){
+            let newDiv = document.createElement('li');
+            newDiv.innerHTML = `
+                <div><img src="image/${value.image}"/></div>
+                <div>${value.name}</div>
+                <div>${value.price.toLocaleString()}</div>
+                <div>
+                    <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
+                    <div class="count">${value.quantity}</div>
+                    <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
+                </div>`;
+                listCard.appendChild(newDiv);
+        }
+    })
+    total.innerText = totalPrice.toLocaleString();
+    quantity.innerText = count;
+}
+function changeQuantity(key, quantity){
+    if(quantity == 0){
+        delete listCards[key];
+    }else{
+        listCards[key].quantity = quantity;
+        listCards[key].price = quantity * products[key].price;
     }
-    else{
-        document.getElementById("cartItem").innerHTML = cart.map((items)=>
-        {
-            var {image, title, price} = items;
-            total=total+price;
-            document.getElementById("total").innerHTML = "$ "+total+".00";
-            return(
-                `<div class='cart-item'>
-                <div class='row-img'>
-                    <img class='rowimg' src=${image}>
-                </div>
-                <p style='font-size:12px;'>${title}</p>
-                <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+
-                "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
-            );
-        }).join('');
-    }
-
-    
+    reloadCard();
 }
