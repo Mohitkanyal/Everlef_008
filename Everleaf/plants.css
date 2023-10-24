@@ -211,7 +211,34 @@ h3 > a { color: inherit; }
 .header-search { display: none;
 background-color: aliceblue;
 padding: 2px 5px;; }
-
+.searchproduct-list
+{
+  padding:20px 0;
+}
+.searchproduct{
+display: flex;
+  align-items:center;
+  cursor:pointer;
+  }
+.searchproduct img
+{
+width:70px;
+  height: 70px;
+  object-fit:cover;
+  }
+.searchproduct .searchp-details
+{
+  padding-left:15px;
+}
+.searchproduct .searchp-details h3
+{
+  font-size:20px;
+  color: #1d1d1d;
+}
+.searchproduct .searchp-details h4
+{
+  font-size:18px;
+}
 .header {
   position: absolute;
   top: 0;
