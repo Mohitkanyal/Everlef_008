@@ -2,10 +2,10 @@ const search = () => {
 const searchbox= document.getElementById("search-item").value.toUpperCase();
 const storeitems= document.getElementById("product-list")
   const product= document.querySelectorAll(".product")
-  const pname= document.getElementById("")
+  const pname= document.getElementById("h3")
 for (var i=0;i<pname.length;i++)
   {
-let match=product[i].getElementByTagName('')[0];
+let match=product[i].getElementByTagName('h3')[0];
     if(match)
     {
 let textvalue=match.textContent || match.innerHTML
