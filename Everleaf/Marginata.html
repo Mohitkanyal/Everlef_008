@@ -14,8 +14,7 @@
     <!-- 
     - #HEADER
   -->
-
-  <header class="header" data-header>
+<header class="header" data-header>
     <div class="container">
 
       <div class="overlay" data-overlay></div>
@@ -37,31 +36,49 @@
         <button class="header-action-btn">
           <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-          <p class="header-action-label"></p><a href="Sigin.html">Sign In</a> 
+          <p class="header-action-label"></p><a href="Sigin.html">account</a> 
         </button>
-        <!-- <a href="Signin.html"></a> -->
+        
 
-        <button class="header-action-btn">
+        <!-- <button class="header-action-btn">
           <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
 
           <p class="header-action-label">Search</p>
-        </button>
+        </button> -->
 
-        <button class="header-action-btn">
-          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+        <!-- CART ICON  -->
+        <i class='bx bx-shopping-bag' id="cart-icon">cart</i>
+        <p class="cart-name"></p><a href=""></a> 
+     
 
-          <p class="header-action-label"></p><a href="cart.html">Cart</a>
+        <!-- CART  -->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
 
-          <div class="btn-badge green" aria-hidden="true">3</div>
-        </button>
+            <!-- CONTENT  -->
+            <div class="cart-content">
+              
 
-        <button class="header-action-btn">
+            </div>
+
+            <!-- TOTAL   -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- CART CLOSE  -->
+            <i class='bx bx-x' id="cart-close"></i>
+        </div>
+
+        <!-- <button class="header-action-btn">
           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
 
           <p class="header-action-label">Wishlist</p>
 
           <div class="btn-badge" aria-hidden="true">2</div>
-        </button>
+        </button> -->
 
       </div>
 
@@ -82,11 +99,11 @@
           </button>
 
         </div>
-    
+
         <ul class="navbar-list">
 
           <li>
-            <a href="index.html" class="navbar-link">Home</a>
+            <a href="#" class="navbar-link">Home</a>
           </li>
           
           <!-- <li>
@@ -95,10 +112,10 @@
           <div class="dropdown">             
             <button class="navbar-link">Shop</button>           
               <div class="dropdown-content">           
-                    <a href="./plants.html">Plants</a>       
-                    <a href="./potters.html">Pots and Planters</a>            
+                    <a href="./plants2.html">Plants</a>       
+                    <a href="./pots.html">Pots and Planters</a>            
                     <a href="./plantcare.html">Plant Care</a>          
-                   <a href="./Air.html">Air purifying Plants</a>        
+                   <a href="./Air.html">Air Purifying Plants</a>        
                    <a href="./indoor.html">Indoor Plants</a>      
                    <a href="./medicinal.html">Medicinal Plants</a>        
                </div>        
@@ -109,17 +126,20 @@
           </li>
 
           <li>
-            <a href="#blog" class="navbar-link">Blog</a>
+            <a href="#down" class="navbar-link">Blog</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Contact Us</a>
+            <a href="#down1" class="navbar-link">Contact Us</a>
           </li>
 
         </ul>
+
       </nav>
-  </div>
+
+    </div>
   </header>
+  
   <main>
         <div class="images">
             <div>
