@@ -6,16 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Everleaf where nature comes home.</title>
-
+<!-- box icons  -->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="https://cdn.xxl.thumbs.canstockphoto.com/vector-illustration-of-cool-green-detailed-leaf-image_csp8020067.jpg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/svg+xml">
 
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./stylecopy.css">
 
   <!-- 
     - google font link
@@ -53,31 +54,49 @@
         <button class="header-action-btn">
           <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-          <p class="header-action-label"></p><a href="signin.html">Sign In</a> 
+          <p class="header-action-label"></p><a href="Sigin.html">account</a> 
         </button>
-        <!-- <a href="Signin.html"></a> -->
+        
 
-        <button class="header-action-btn">
+        <!-- <button class="header-action-btn">
           <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
 
           <p class="header-action-label">Search</p>
-        </button>
+        </button> -->
 
-        <button class="header-action-btn">
-          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
-          <div class="btn-badge green" aria-hidden="true">3</div>
+        <!-- CART ICON  -->
+        <i class='bx bx-shopping-bag' id="cart-icon">cart</i>
+        <p class="cart-name"></p><a href=""></a> 
+     
 
-          <p class="header-action-label"></p><a href="cart.html">Cart</a>
+        <!-- CART  -->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
 
-        </button>
+            <!-- CONTENT  -->
+            <div class="cart-content">
+              
 
-        <button class="header-action-btn">
+            </div>
+
+            <!-- TOTAL   -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- CART CLOSE  -->
+            <i class='bx bx-x' id="cart-close"></i>
+        </div>
+
+        <!-- <button class="header-action-btn">
           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
 
           <p class="header-action-label">Wishlist</p>
 
           <div class="btn-badge" aria-hidden="true">2</div>
-        </button>
+        </button> -->
 
       </div>
 
@@ -102,7 +121,7 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="index.html" class="navbar-link">Home</a>
+            <a href="#" class="navbar-link">Home</a>
           </li>
           
           <!-- <li>
@@ -112,11 +131,11 @@
             <button class="navbar-link">Shop</button>           
               <div class="dropdown-content">           
                     <a href="./plants2.html">Plants</a>       
-                    <a href="./potters.html">Pots and Planters</a>            
-                    <a href="./plantcare.html">Plant Care</a>          
-                   <a href="./Air.html">Air purifying Plants</a>        
-                   <a href="./indoor.html">Indoor Plants</a>      
-                   <a href="./medicinal.html">Medicinal Plants</a>        
+                    <a href="./pots.html">Pots and Planters</a>            
+                    <a href="#Plant Care">Plant Care</a>          
+                   <a href="#Exotic Plants">Exotic Plants</a>        
+                   <a href="#Indoor Plants">Indoor Plants</a>      
+                   <a href="medicinal.html">Medicinal Plants</a>        
                </div>        
            </div>
 
@@ -125,11 +144,11 @@
           </li>
 
           <li>
-            <a href="#blog" class="navbar-link">Blog</a>
+            <a href="#down" class="navbar-link">Blog</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Contact Us</a>
+            <a href="#down1" class="navbar-link">Contact Us</a>
           </li>
 
         </ul>
@@ -150,7 +169,9 @@
         - #HERO
       -->
 
-      <section class="slider-box" ><div id="slider" ><img src="./assets/images/edit banner.png" class="1">
+      <section class="slider-box" ><div id="slider" ><img src="./assets/images/slider1.png" class="img1">
+        <!-- <img src="./assets/images/mobile banner.png" class="img2"> -->
+        
         <img src="./assets/images/slider2.png">
       <img src="./assets/images/slider3.png"></div>
         <div class="indicators">
@@ -176,33 +197,7 @@
 
         <!-- </div> -->
       </section>
-      <script>
-        var slide=document.getElementById("slider");
-        var btn1=document.getElementById("btn1");
-        var btn2=document.getElementById("btn2");
-        var btn3=document.getElementById("btn3");
-
-        btn1.onclick=function(){
-          slide.style.transform="translateX(0px)";
-          btn1.classList.add("active1")
-          btn2.classList.remove("active1")
-          btn3.classList.remove("active1")
-          
-        }
-        btn2.onclick=function(){
-          slide.style.transform="translateX(-100%)";
-          btn1.classList.remove("active1")
-          btn2.classList.add("active1")
-          btn3.classList.remove("active1")
-        }
-        btn3.onclick=function(){
-          slide.style.transform="translateX(-200%)";
-          btn1.classList.remove("active1")
-          btn2.classList.remove("active1")
-          btn3.classList.add("active1")
-        }
-        
-      </script>
+      
       
 
 
@@ -290,7 +285,7 @@
                   class="w-100">
               </figure>
 
-              <a href="./plants.html" class="btn btn-secondary">plants</a>
+              <a href="./Plants.html" class="btn btn-secondary">Plants</a>
             </li>
 
             <li class="category-item">
@@ -299,7 +294,7 @@
                   class="w-100">
               </figure>
 
-              <a href="./potters.html" class="btn btn-secondary">Pots and Planters</a>
+              <a href="./pots.html" class="btn btn-secondary">Pots and Planters</a>
             </li>
 
             <li class="category-item">
@@ -308,16 +303,16 @@
                   class="w-100">
               </figure>
 
-              <a href="./plantcare.html" class="btn btn-secondary">Plant Care</a>
+              <a href="#" class="btn btn-secondary">Plant Care</a>
             </li>
 
             <li class="category-item">
               <figure class="category-banner">
-                <img src="./assets/images/exoticplants.jpg" alt="Air Purifying plants" loading="lazy" width="510"
+                <img src="./assets/images/exoticplants.jpg" alt="Exotic plants" loading="lazy" width="510"
                   height="600" class="w-100">
               </figure>
 
-              <a href="./Air.html" class="btn btn-secondary">Air Purifying Plants</a>
+              <a href="#" class="btn btn-secondary">Exotic Plants</a>
             </li>
 
             <li class="category-item">
@@ -326,7 +321,7 @@
                   class="w-100">
               </figure>
 
-              <a href="indoor.html" class="btn btn-secondary">Indoor Plants</a>
+              <a href="#" class="btn btn-secondary">Indoor Plants</a>
             </li>
 
             <li class="category-item">
@@ -335,7 +330,7 @@
                   class="w-100">
               </figure>
 
-              <a href="./medicinal.html" class="btn btn-secondary">Medicinal Plants</a>
+              <a href="medicinal1.html" class="btn btn-secondary">Medicinal Plants</a>
             </li>
 
           </ul>
@@ -344,232 +339,73 @@
       </section>
 
 
-
-
-
-     <!-- 
-        - #PRODUCT
-      -->
-
-      <section class="section product">
-        <div class="container">
-
-          <h2 class="h2 section-title">Products of the week</h2>
-
-          <ul class="filter-list">
-
-            <li>
-              <button class="filter-btn  active">Best Seller</button>
-            </li>
-
-           
-           
-
-            <li>
-              <button class="filter-btn">Trendy</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">New Arrival</button>
-            </li>
-
-          </ul>
-
-          <ul class="product-list">
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-
-                  <a href="./plants/luxkybamboo.html">
-                    <img src="./assets/images/lucky bamboo plant with background white (1).jpg" alt="Lucky Bamboo" loading="lazy" width="800"
-                      height="1034" class="w-100">
-                  </a>
-
-                  <div class="card-badge red"> -20%</div>
-
-                  <div class="card-actions">
-
-                    <button class="card-action-btn" aria-label="Quick view">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-action-btn cart-btn">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                      <p>Add to Cart</p>
-                    </button>
-
-                    <button class="card-action-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">
-                    <a href="./plants/luxkybamboo.html">Lucky Bamboo</a>
-                    
-                  </h3>
-
-                  <div class="card-price">
-                    <data value="240">&#x20b9;240</data>
-
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-
-                  <a href="./plants/moneyplant.html">
-                    <img src="./assets/images/money plant with background white.jpg" alt="Money plant" loading="lazy" width="800"
-                      height="1034" class="w-100">
-                  </a>
-
-                  <div class="card-badge green"> New</div>
-
-                  <div class="card-actions">
-
-                    <button class="card-action-btn" aria-label="Quick view">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-action-btn cart-btn">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                      <p>Add to Cart</p>
-                    </button>
-
-                    <button class="card-action-btn" aria-label="Add to Wishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">
-                    <a href="./plants/moneyplant.html">Money Plant</a>
-                  </h3>
-
-                  <div class="card-price">
-                   <data value="250">&#x20b9;250</data>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-
-                  <a href="./plants/peacelily.html">
-                    <img src="./assets/images/peace lily plant in a pot with background white (1).jpg" alt="Peace lily" loading="lazy"
-                      width="800" height="1034" class="w-100">
-                  </a>
- 
-                  <div class="card-actions">
-
-                    <button class="card-action-btn" aria-label="Quick view">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-action-btn cart-btn">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                      <p>Add to Cart</p>
-                    </button>
-
-                    <button class="card-action-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">
-                    <a href="./plants/peacelily.html">Peace lily plant</a>
-                  </h3>
-
-                  <div class="card-price">
-                    <data value="250">&#x20b9;250</data>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-
-                  <a href="./plants/zzplant.html">
-                    <img src="./assets/images/zz plant in a pot with background white (1).jpg" alt="ZZ" loading="lazy" width="800"
-                      height="1034" class="w-100">
-                  </a>
-
-                  <div class="card-actions">
-
-                    <button class="card-action-btn" aria-label="Quick view">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-action-btn cart-btn">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                      <p>Add to Cart</p>
-                    </button>
-
-                    <button class="card-action-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">
-                    <a href="./plants/zzplant.html">ZZ plant</a>
-                  </h3>
-
-                  <div class="card-price">
-                    <data value="300">&#x20b9;300</data>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-           
-           
-          </ul>
-
-          <button class="btn btn-outline"><a href="./Plants.html">View All Products</button>
-
-        </div>
-      </section>
-
-
-     
-      
-      
-      
-      <!-- 
+<!-- SHOP SECTION  -->
+<section class="shop container">
+  <h2 class="section-title">Best Sellers</h2>
+
+  <!-- CONTENT  -->
+  <div class="shop-content">
+      <!-- BOX 1 -->
+      <div class="product-box">
+          <img src="assets/images/lucky bamboo plant with background white (1).jpg" alt="Lucky Bamboo" class="product-img">
+          <h2 class="product-title">Lucky Bamboo</h2>
+          <span class="product-price">₹249</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- BOX 2 -->
+      <div class="product-box">
+          <img src="assets/images/peace lily plant in a pot with background white (1) - Copy.jpg" alt="v" class="product-img">
+          <h2 class="product-title">Peace lily</h2>
+          <span class="product-price">₹149</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- BOX 3 -->
+      <div class="product-box">
+          <img src="assets/images/zz plant in a pot with background white (1).jpg" alt="ZZ Plant" class="product-img">
+          <h2 class="product-title">ZZ Plant</h2>
+          <span class="product-price">₹199</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- BOX 4 -->
+      <div class="product-box">
+          <img src="assets/images/money plant with background white - Copy.jpg" alt="Money Plant" class="product-img">
+          <h2 class="product-title">Money Plant</h2>
+          <span class="product-price">₹105</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- BOX 5 
+      <div class="product-box">
+          <img src="assets/img/product5.jpg" alt="" class="product-img">
+          <h2 class="product-title">PS5 Controller</h2>
+          <span class="product-price">$95</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+      </div>-->
+      <!-- BOX 6 
+      <div class="product-box">
+          <img src="assets/img/product6.jpg" alt="" class="product-img">
+          <h2 class="product-title">Galaxy Z Fold</h2>
+          <span class="product-price">$1400</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+      </div>-->
+      <!-- BOX 7 
+      <div class="product-box">
+          <img src="assets/img/product7.jpg" alt="" class="product-img">
+          <h2 class="product-title">Nokon Camera</h2>
+          <span class="product-price">$1700</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+      </div>-->
+      <!-- BOX 8 
+      <div class="product-box">
+          <img src="assets/img/product8.jpg" alt="" class="product-img">
+          <h2 class="product-title">Apple Watch</h2>
+          <span class="product-price">$110.5</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+      </div>-->
+  </div>
+</section>
+
+
+ <!-- 
         - #BLOG
       -->
       <div id="down"></div>
@@ -624,7 +460,7 @@
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a href="./blog2.html">
+                  <a href="./blog.html">
                     <img src="./assets/images/watering plants.webp" alt="How often to water plants"
                       loading="lazy" width="1020" height="700" class="w-100">
                   </a>
@@ -704,8 +540,7 @@
         </div>
       </section>
 
-
-
+      
  
       
       
@@ -767,7 +602,6 @@
 
       <section class="section newsletter">
         <div class="container">
-
 
           <div class="newsletter-card" style="background-image: url('./assets/images/newsletter-bg.png')">
 
@@ -915,7 +749,7 @@
           </li>
 
         </ul>
-
+          <div id="down1"></div>
         <ul class="footer-list">
 
           <li>
@@ -979,6 +813,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/main.js"></script>
 
   <!-- 
     - ionicon link
