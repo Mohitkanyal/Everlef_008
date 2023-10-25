@@ -540,7 +540,7 @@ header{
     transition: var(--transition-1);
   }
   .cart-name,a {
-    color: hsl(0, 0%, 100%);
+    color: Black;
     font-size: var(--fs-10);
     transition: var(--transition-1);
     
