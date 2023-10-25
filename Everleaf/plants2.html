@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants | Everleaf</title>
+<!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/svg+xml">
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- styles  -->
+    <link rel="stylesheet" href="./stylecopy.css">
+    <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-search">
+        <input type="search" name="search" placeholder="Search Product..." class="input-field">
+
+        <button class="search-btn" aria-label="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/97d57b7e-c88a-4db7-8ed9-2903e5c5f0b5.jpg" alt="Everleaf logo" width="130" height="25">
+      </a>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label"></p><a href="./Sigin.html"></a> 
+        </button>
+        <!-- <a href="Signin.html"></a> -->
+
+        <button class="header-action-btn">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Search</p>
+        </button>
+
+        <!-- CART ICON  -->
+        <i class='bx bx-shopping-bag' id="cart-icon"></i>
+        <p class="cart-name"></p><a href=""></a> 
+     
+
+        <!-- CART  -->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+
+            <!-- CONTENT  -->
+            <div class="cart-content">
+              
+
+            </div>
+
+            <!-- TOTAL   -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- CART CLOSE  -->
+            <i class='bx bx-x' id="cart-close"></i>
+        </div>
+
+        <!-- <button class="header-action-btn">
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Wishlist</p>
+
+          <div class="btn-badge" aria-hidden="true">2</div>
+        </button> -->
+
+      </div>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+         
+
+          <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index1.html" class="navbar-link">Home</a>
+          </li>
+          
+          <!-- <li>
+            <a href="#" class="navbar-link">Shop</a>
+          </li> -->
+          <div class="dropdown">             
+            <button class="navbar-link">Shop</button>           
+              <div class="dropdown-content">           
+                    <a href="./plants2.html">Plants</a>       
+                    <a href="./pots.html">Pots and Planters</a>            
+                    <a href="./care.html">Plant Care</a>          
+                   <a href="./exotic.html">Exotic Plants</a>        
+                   <a href="./indoor.html">Indoor Plants</a>      
+                   <a href="./medicinal.html">Medicinal Plants</a>        
+               </div>        
+           </div>
+
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#down" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#down1" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="assets/images/lucky bamboo plant with background white (1) - Copy.jpg" alt="" class="product-img">
+                <h2 class="product-title">Lucky Bamboo</h2>
+                <span class="product-price">240</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="assets/images/peace lily plant in a pot with background white (1) - Copy.jpg" alt="" class="product-img">
+                <h2 class="product-title">Peace Lily</h2>
+                <span class="product-price">$59.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="assets/images/jade  plant in a pot with background white (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">Jade Plant</h2>
+                <span class="product-price">$29.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="assets/images/zz plant in a pot with background white (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">ZZ Plant</h2>
+                <span class="product-price">$105</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="assets/images/thuja plant in a pot with background white (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">Thuja Plant</h2>
+                <span class="product-price">$95</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="assets/images/Draceana Dara Singh plant in a pot with background white  (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">Draceana Dara Singh Plant</h2>
+                <span class="product-price">$1400</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="assets/images/aloe vera star plant in a pot with background white  (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">AloeVera Star Plant</h2>
+                <span class="product-price">$1700</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="assets/images/heart hoya plant in a pot with background white  (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">Heart Hoya Plant</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="assets/images/_fern plant in a pot with background white  (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">Fern Plant</h2>
+                <span class="product-price">240</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="assets/images/aralia  plant in a pot with background white (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">Aralia Plant</h2>
+                <span class="product-price">$59.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="assets/images/areca palm plant in a pot with background white (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">Areca Palm Plant</h2>
+                <span class="product-price">$29.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="assets/images/cactus plant in a pot with background white .jpg" alt="" class="product-img">
+                <h2 class="product-title">Cactus Plant</h2>
+                <span class="product-price">$105</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="assets/images/Calathea Burle Marxii plant in a pot with background white  (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">Calathea Burle Marxii Plant</h2>
+                <span class="product-price">$95</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="assets/images/ficus bonsai plant in a pot with background white (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">Ficus Bonsai Plant</h2>
+                <span class="product-price">$1400</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="assets/images/lemongrass plant in a pot with background white (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">lemongrass Plant</h2>
+                <span class="product-price">$1700</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="assets/images/money plant with background white.jpg" alt="" class="product-img">
+                <h2 class="product-title">Money Plant</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="assets/images/snake plant in a pot with background white (1) - Copy.jpg" alt="" class="product-img">
+                <h2 class="product-title">Snake Plant</h2>
+                <span class="product-price">240</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="assets/images/song of india plant in a pot with background white  (2) (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">Song Of India Plant</h2>
+                <span class="product-price">$59.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="assets/images/stromanthe triostar plant in a pot with background white (1).jpg" alt="" class="product-img">
+                <h2 class="product-title">Stromanthe Triostar Plant</h2>
+                <span class="product-price">$29.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="assets/images/cactus plant in a pot with background white .jpg" alt="" class="product-img">
+                <h2 class="product-title">Cactus Plant</h2>
+                <span class="product-price">$105</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+           </var>
+        </div>
+    </section>
+
+
+
+     <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo1">
+            <img src="./assets/images/logoeverleaf.svg" alt="logo">
+          </a>
+
+          <p class="footer-text">
+            Welcome to our plant paradise! Here you`ll find a wide selection of high-quality, locally sourced plants for any occasion.From decorative pots and planters to tropical and exotic plants, we have something for everyone.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Story</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Payment Type</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping Policy</a>
+          </li>
+
+  
+  
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">FAQS</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Category</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Indoor Plants</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Air Purifying Plants</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Exotic Plants</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Medicinal Plants</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gift Packs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pots</a>
+          </li>
+
+        </ul>
+          <div id="down1"></div>
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Get In Touch</p>
+          </li>
+
+         
+         
+          <li>
+            <a href="#" class="footer-link">Call: +91-7400-7400</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Email: contactus@everleaf.com</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href="#">Evearleaf</a>. All Rights Reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <div class="payment">
+          <p class="payment-title">We Support</p>
+
+          <img src="./assets/images/payment-img.png" alt="Online payment logos" class="payment-img">
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+<!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- link js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
