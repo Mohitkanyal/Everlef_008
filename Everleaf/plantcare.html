@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indoor Plants</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Plants | Everleaf</title>
+<!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/svg+xml">
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- styles  -->
+    <link rel="stylesheet" href="./stylecopy.css">
+    <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- 
     - #HEADER
@@ -33,7 +49,7 @@
         <button class="header-action-btn">
           <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-          <p class="header-action-label"></p><a href="signin.html">Sign In</a> 
+          <p class="header-action-label"></p><a href="./Sigin.html"></a> 
         </button>
         <!-- <a href="Signin.html"></a> -->
 
@@ -43,21 +59,39 @@
           <p class="header-action-label">Search</p>
         </button>
 
-        <button class="header-action-btn">
-          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
-          <div class="btn-badge green" aria-hidden="true">3</div>
+        <!-- CART ICON  -->
+        <i class='bx bx-shopping-bag' id="cart-icon"></i>
+        <p class="cart-name"></p><a href=""></a> 
+     
 
-          <p class="header-action-label"></p><a href="cart.html">Cart</a>
+        <!-- CART  -->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
 
-        </button>
+            <!-- CONTENT  -->
+            <div class="cart-content">
+              
 
-        <button class="header-action-btn">
+            </div>
+
+            <!-- TOTAL   -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- CART CLOSE  -->
+            <i class='bx bx-x' id="cart-close"></i>
+        </div>
+
+        <!-- <button class="header-action-btn">
           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
 
           <p class="header-action-label">Wishlist</p>
 
           <div class="btn-badge" aria-hidden="true">2</div>
-        </button>
+        </button> -->
 
       </div>
 
@@ -82,7 +116,7 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#home" class="navbar-link">Home</a>
+            <a href="./index1.html" class="navbar-link">Home</a>
           </li>
           
           <!-- <li>
@@ -91,12 +125,12 @@
           <div class="dropdown">             
             <button class="navbar-link">Shop</button>           
               <div class="dropdown-content">           
-                   <a href="./plants.html">Plants</a>       
-                    <a href="./potters.html">Pots and Planters</a>            
+                    <a href="./plants2.html">Plants</a>       
+                    <a href="./pots.html">Pots and Planters</a>            
                     <a href="./plantcare.html">Plant Care</a>          
-                   <a href="./Air.html">Air purifying Plants</a>        
+                   <a href="./Air.html">Air Purifying Plants</a>        
                    <a href="./indoor.html">Indoor Plants</a>      
-                   <a href="./medicinal.html">Medicinal Plants</a>      
+                   <a href="./medicinal.html">Medicinal Plants</a>        
                </div>        
            </div>
 
@@ -105,11 +139,11 @@
           </li>
 
           <li>
-            <a href="#blog" class="navbar-link">Blog</a>
+            <a href="#down" class="navbar-link">Blog</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Contact Us</a>
+            <a href="#down1" class="navbar-link">Contact Us</a>
           </li>
 
         </ul>
@@ -118,280 +152,66 @@
 
     </div>
   </header>
-    <ul class="product-list">
 
-        <li>
-          <div class="product-card">
 
-            <figure class="card-banner">
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
 
-              <a href="#">
-                <img src="./assets/images/Coco Peat Block - 4 kg.jpg" alt="Coco Peat Block - 4 kg" loading="lazy" width="800"
-                  height="1034" class="w-100">
-              </a>
-
-              <div class="card-badge red"> -20%</div>
-
-              <div class="card-actions">
-
-                <button class="card-action-btn" aria-label="Quick view">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="card-action-btn cart-btn">
-                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                  <p>Add to Cart</p>
-                </button>
-
-                <button class="card-action-btn" aria-label="Add to Whishlist">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-              </div>
-
-            </figure>
-
-            <div class="card-content">
-              <h3 class="h4 card-title">
-                <a href="#">Coco Peat Block - 4 kg</a>
-                
-              </h3>
-
-              <div class="card-price">
-                <data value="240">&#x20b9;299</data>
-
-              </div>
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="assets/images/Coco Peat Block - 4 kg.jpg" alt="" class="product-img">
+                <h2 class="product-title">Coco Peat Block</h2>
+                <span class="product-price">$50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-
-          </div>
-        </li>
-
-        <li>
-          <div class="product-card">
-
-            <figure class="card-banner">
-
-              <a href="#">
-                <img src="./assets/images/Plant O Boost.jpg" alt="Plant O Boost" loading="lazy" width="800"
-                  height="1034" class="w-100">
-              </a>
-
-              <div class="card-badge green"> New</div>
-
-              <div class="card-actions">
-
-                <button class="card-action-btn" aria-label="Quick view">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="card-action-btn cart-btn">
-                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                  <p>Add to Cart</p>
-                </button>
-
-                <button class="card-action-btn" aria-label="Add to Wishlist">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-              </div>
-
-            </figure>
-
-            <div class="card-content">
-              <h3 class="h4 card-title">
-                <a href="#">Plant O Boost</a>
-              </h3>
-
-              <div class="card-price">
-               <data value="250">&#x20b9;200</data>
-              </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="assets/images/Plant O Boost.jpg" alt="" class="product-img">
+                <h2 class="product-title">Plant O Boost</h2>
+                <span class="product-price">$35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-
-          </div>
-        </li>
-
-        <li>
-          <div class="product-card">
-
-            <figure class="card-banner">
-
-              <a href="#">
-                <img src="./assets/images/Bone Meal Powder - 500 g.jpg" alt="Bone Meal Powder - 500 g" loading="lazy"
-                  width="800" height="1034" class="w-100">
-              </a>
-
-              <div class="card-actions">
-
-                <button class="card-action-btn" aria-label="Quick view">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="card-action-btn cart-btn">
-                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                  <p>Add to Cart</p>
-                </button>
-
-                <button class="card-action-btn" aria-label="Add to Whishlist">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-              </div>
-
-            </figure>
-
-            <div class="card-content">
-              <h3 class="h4 card-title">
-                <a href="#">Bone Meal Powder - 500 g</a>
-              </h3>
-
-              <div class="card-price">
-                <data value="250">&#x20b9;200</data>
-              </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="assets/images/Bone Meal Powder - 500 g.jpg" alt="" class="product-img">
+                <h2 class="product-title">Bone Meal Powder</h2>
+                <span class="product-price">$47</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-
-          </div>
-        </li>
-
-        <li>
-          <div class="product-card">
-
-            <figure class="card-banner">
-
-              <a href="#">
-                <img src="./assets/images/Soilrite Plus (Soil-less Potting Mix with Nutrients) - 2 kg.jpg" alt="Soilrite Plus (Soil-less Potting Mix with Nutrients) - 2 kg" loading="lazy" width="800"
-                  height="1034" class="w-100">
-              </a>
-
-              <div class="card-actions">
-
-                <button class="card-action-btn" aria-label="Quick view">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="card-action-btn cart-btn">
-                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                  <p>Add to Cart</p>
-                </button>
-
-                <button class="card-action-btn" aria-label="Add to Whishlist">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-              </div>
-
-            </figure>
-
-            <div class="card-content">
-              <h3 class="h4 card-title">
-                <a href="#">Soilrite Plus (Soil-less Potting Mix with Nutrients) - 2 kg</a>
-              </h3>
-
-              <div class="card-price">
-                <data value="300">&#x20b9;300</data>
-              </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="assets/images/Soilrite Plus (Soil-less Potting Mix with Nutrients) - 2 kg.jpg" alt="" class="product-img">
+                <h2 class="product-title">Soilrite Plus</h2>
+                <span class="product-price">$35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-
-          </div>
-        </li>
-        <li>
-            <div class="product-card">
-  
-              <figure class="card-banner">
-  
-                <a href="#">
-                  <img src="./assets/images/Potting Soil Mix for Bonsai Plants - 3 kg.jpg" alt="Potting Soil Mix for Bonsai Plants - 3 kg" loading="lazy" width="800"
-                    height="1034" class="w-100">
-                </a>
-  
-                <div class="card-actions">
-  
-                  <button class="card-action-btn" aria-label="Quick view">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-  
-                  <button class="card-action-btn cart-btn">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-  
-                    <p>Add to Cart</p>
-                  </button>
-  
-                  <button class="card-action-btn" aria-label="Add to Whishlist">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-  
-                </div>
-  
-              </figure>
-  
-              <div class="card-content">
-                <h3 class="h4 card-title">
-                  <a href="#">Potting Soil Mix for Bonsai Plants - 3 kg</a>
-                </h3>
-  
-                <div class="card-price">
-                  <data value="300">&#x20b9;549</data>
-                </div>
-              </div>
-  
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="assets/images/Potting Soil Mix for Bonsai Plants - 3 kg.jpg" alt="" class="product-img">
+                <h2 class="product-title">Potting Soil Mix</h2>
+                <span class="product-price">$55</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-          </li>
-          <li>
-            <div class="product-card">
-  
-              <figure class="card-banner">
-  
-                <a href="#">
-                  <img src="./assets/images/Processed Organic Poultry Manure (NPK Rich) - 1 kg (Set of 2).jpg" alt="Processed Organic Poultry Manure (NPK Rich) - 1 kg (Set of 2)" loading="lazy" width="800"
-                    height="1034" class="w-100">
-                </a>
-  
-                <div class="card-actions">
-  
-                  <button class="card-action-btn" aria-label="Quick view">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-  
-                  <button class="card-action-btn cart-btn">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-  
-                    <p>Add to Cart</p>
-                  </button>
-  
-                  <button class="card-action-btn" aria-label="Add to Whishlist">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-  
-                </div>
-  
-              </figure>
-  
-              <div class="card-content">
-                <h3 class="h4 card-title">
-                  <a href="#">Processed Organic Poultry Manure (NPK Rich) - 1 kg (Set of 2)</a>
-                </h3>
-  
-                <div class="card-price">
-                  <data value="300">&#x20b9;249</data>
-                </div>
-              </div>
-  
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="assets/images/Processed Organic Poultry Manure (NPK Rich) - 1 kg (Set of 2).jpg" alt="" class="product-img">
+                <h2 class="product-title">Processed Organic Poultry Manure</h2>
+                <span class="product-price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-          </li>
+            
           
-       
-       
-      </ul>
+           
+           </var>
+        </div>
+    </section>
 
-     
 
-    </div>
-  </section>
-    
-  <!-- 
+
+     <!-- 
     - #FOOTER
   -->
 
@@ -402,7 +222,7 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">
+          <a href="#" class="logo1">
             <img src="./assets/images/logoeverleaf.svg" alt="logo">
           </a>
 
@@ -500,7 +320,7 @@
           </li>
 
         </ul>
-
+          <div id="down1"></div>
         <ul class="footer-list">
 
           <li>
@@ -556,21 +376,15 @@
 
   </footer>
 
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
+<!-- 
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    
+
+    <!-- link js  -->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
