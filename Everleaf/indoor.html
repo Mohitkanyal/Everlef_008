@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indoor Plants</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Plants | Everleaf</title>
+<!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/svg+xml">
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- styles  -->
+    <link rel="stylesheet" href="./stylecopy.css">
+    <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- 
     - #HEADER
   -->
 
-<header class="header" data-header>
+  <header class="header" data-header>
     <div class="container">
 
       <div class="overlay" data-overlay></div>
@@ -33,18 +49,18 @@
         <button class="header-action-btn">
           <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-          <p class="header-action-label"></p><a href="Sigin.html">account</a> 
+          <p class="header-action-label"></p><a href="./Sigin.html"></a> 
         </button>
-        
+        <!-- <a href="Signin.html"></a> -->
 
-        <!-- <button class="header-action-btn">
+        <button class="header-action-btn">
           <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
 
           <p class="header-action-label">Search</p>
-        </button> -->
+        </button>
 
         <!-- CART ICON  -->
-        <i class='bx bx-shopping-bag' id="cart-icon">cart</i>
+        <i class='bx bx-shopping-bag' id="cart-icon"></i>
         <p class="cart-name"></p><a href=""></a> 
      
 
@@ -100,7 +116,7 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#" class="navbar-link">Home</a>
+            <a href="./index1.html" class="navbar-link">Home</a>
           </li>
           
           <!-- <li>
@@ -136,406 +152,86 @@
 
     </div>
   </header>
-    <ul class="product-list">
 
-        <li>
-          <div class="product-card">
 
-            <figure class="card-banner">
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
 
-              <a href="#">
-                <img src="../assets/images/lucky bamboo.webp" alt="Lucky Bamboo" loading="lazy" width="800"
-                  height="1034" class="w-100">
-              </a>
-
-              <div class="card-badge red"> -20%</div>
-
-              <div class="card-actions">
-
-                <button class="card-action-btn" aria-label="Quick view">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="card-action-btn cart-btn">
-                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                  <p>Add to Cart</p>
-                </button>
-
-                <button class="card-action-btn" aria-label="Add to Wishlist">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-              </div>
-
-            </figure>
-
-            <div class="card-content">
-              <h3 class="h4 card-title">
-                <a href="LuckyBamboo.html">Lucky Bamboo</a>
-                
-              </h3>
-
-              <div class="card-price">
-                <data value="240">&#x20b9;240</data>
-
-              </div>
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="assets/images/Marginata1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Marginata (Dracaena marginata)</h2>
+                <span class="product-price">$50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-
-          </div>
-        </li>
-
-        <li>
-          <div class="product-card">
-
-            <figure class="card-banner">
-
-              <a href="#">
-                <img src="./assets/images/money plnat.webp" alt="Money plant" loading="lazy" width="800"
-                  height="1034" class="w-100">
-              </a>
-
-              <div class="card-badge green"> New</div>
-
-              <div class="card-actions">
-
-                <button class="card-action-btn" aria-label="Quick view">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="card-action-btn cart-btn">
-                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                  <p>Add to Cart</p>
-                </button>
-
-                <button class="card-action-btn" aria-label="Add to Wishlist">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-              </div>
-
-            </figure>
-
-            <div class="card-content">
-              <h3 class="h4 card-title">
-                <a href="#">Money Plant</a>
-              </h3>
-
-              <div class="card-price">
-               <data value="250">&#x20b9;250</data>
-              </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="assets/images/Syngonium1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Syngonium Plant</h2>
+                <span class="product-price">$35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-
-          </div>
-        </li>
-
-        <li>
-          <div class="product-card">
-
-            <figure class="card-banner">
-
-              <a href="#">
-                <img src="./assets/images/peace lily.webp" alt="Peace lily" loading="lazy"
-                  width="800" height="1034" class="w-100">
-              </a>
-
-              <div class="card-actions">
-
-                <button class="card-action-btn" aria-label="Quick view">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="card-action-btn cart-btn">
-                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                  <p>Add to Cart</p>
-                </button>
-
-                <button class="card-action-btn" aria-label="Add to Whishlist">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-              </div>
-
-            </figure>
-
-            <div class="card-content">
-              <h3 class="h4 card-title">
-                <a href="#">Peace lily plant</a>
-              </h3>
-
-              <div class="card-price">
-                <data value="250">&#x20b9;250</data>
-              </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="assets/images/Sansevieria1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Sansevieria trifasciata Hahnii</h2>
+                <span class="product-price">$47</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-
-          </div>
-        </li>
-
-        <li>
-          <div class="product-card">
-
-            <figure class="card-banner">
-
-              <a href="#">
-                <img src="./assets/images/zz.webp" alt="ZZ" loading="lazy" width="800"
-                  height="1034" class="w-100">
-              </a>
-
-              <div class="card-actions">
-
-                <button class="card-action-btn" aria-label="Quick view">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-
-                <button class="card-action-btn cart-btn">
-                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-                  <p>Add to Cart</p>
-                </button>
-
-                <button class="card-action-btn" aria-label="Add to Whishlist">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-
-              </div>
-
-            </figure>
-
-            <div class="card-content">
-              <h3 class="h4 card-title">
-                <a href="#">ZZ plant</a>
-              </h3>
-
-              <div class="card-price">
-                <data value="300">&#x20b9;300</data>
-              </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="assets/images/Ruber1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Rubber Plant</h2>
+                <span class="product-price">$35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="assets/images/Gerbera1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Gerbera Plant</h2>
+                <span class="product-price">$55</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="assets/images/Alocasia1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Alocasia Hybrid Plant</h2>
+                <span class="product-price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="assets/images/Dracaena1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Dracaena Plant</h2>
+                <span class="product-price">$36</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="assets/images/Chamaedorea1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Chamaedorea Plant</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="assets/images/Aglaonema1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Aglaonema Plant</h2>
+                <span class="product-price">$240</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+          
+           
+           </var>
+        </div>
+    </section>
 
-          </div>
-        </li>
-        <li>
-            <div class="product-card">
-  
-              <figure class="card-banner">
-  
-                <a href="#">
-                  <img src="./assets/images/Areca.webp" alt="Areca" loading="lazy" width="800"
-                    height="1034" class="w-100">
-                </a>
-  
-                <div class="card-actions">
-  
-                  <button class="card-action-btn" aria-label="Quick view">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-  
-                  <button class="card-action-btn cart-btn">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-  
-                    <p>Add to Cart</p>
-                  </button>
-  
-                  <button class="card-action-btn" aria-label="Add to Whishlist">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-  
-                </div>
-  
-              </figure>
-  
-              <div class="card-content">
-                <h3 class="h4 card-title">
-                  <a href="#">Areca</a>
-                </h3>
-  
-                <div class="card-price">
-                  <data value="300">&#x20b9;300</data>
-                </div>
-              </div>
-  
-            </div>
-          </li>
-          <li>
-            <div class="product-card">
-  
-              <figure class="card-banner">
-  
-                <a href="#">
-                  <img src="./assets/images/Cactus.webp" alt="Christmas Cactus" loading="lazy" width="800"
-                    height="1034" class="w-100">
-                </a>
-  
-                <div class="card-actions">
-  
-                  <button class="card-action-btn" aria-label="Quick view">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-  
-                  <button class="card-action-btn cart-btn">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-  
-                    <p>Add to Cart</p>
-                  </button>
-  
-                  <button class="card-action-btn" aria-label="Add to Whishlist">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-  
-                </div>
-  
-              </figure>
-  
-              <div class="card-content">
-                <h3 class="h4 card-title">
-                  <a href="#">Christmas Cactus</a>
-                </h3>
-  
-                <div class="card-price">
-                  <data value="300">&#x20b9;249</data>
-                </div>
-              </div>
-  
-            </div>
-          </li>
-          <li>
-            <div class="product-card">
-  
-              <figure class="card-banner">
-  
-                <a href="#">
-                  <img src="./assets/images/Snake.webp" alt="Snake Plant" loading="lazy" width="800"
-                    height="1034" class="w-100">
-                </a>
-  
-                <div class="card-actions">
-  
-                  <button class="card-action-btn" aria-label="Quick view">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-  
-                  <button class="card-action-btn cart-btn">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-  
-                    <p>Add to Cart</p>
-                  </button>
-  
-                  <button class="card-action-btn" aria-label="Add to Whishlist">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-  
-                </div>
-  
-              </figure>
-  
-              <div class="card-content">
-                <h3 class="h4 card-title">
-                  <a href="#">Snake Plant-Green</a>
-                </h3>
-  
-                <div class="card-price">
-                  <data value="300">&#x20b9;249</data>
-                </div>
-              </div>
-  
-            </div>
-          </li>
-          <li>
-            <div class="product-card">
-  
-              <figure class="card-banner">
-  
-                <a href="#">
-                  <img src="./assets/images/Betel.webp" alt="Betel Leaf Plant " loading="lazy" width="800"
-                    height="1034" class="w-100">
-                </a>
-  
-                <div class="card-actions">
-  
-                  <button class="card-action-btn" aria-label="Quick view">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-  
-                  <button class="card-action-btn cart-btn">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-  
-                    <p>Add to Cart</p>
-                  </button>
-  
-                  <button class="card-action-btn" aria-label="Add to Whishlist">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-  
-                </div>
-  
-              </figure>
-  
-              <div class="card-content">
-                <h3 class="h4 card-title">
-                  <a href="#">Betel Leaf Plant </a>
-                </h3>
-  
-                <div class="card-price">
-                  <data value="300">&#x20b9;349</data>
-                </div>
-              </div>
-  
-            </div>
-          </li>
-          <li>
-            <div class="product-card">
-  
-              <figure class="card-banner">
-  
-                <a href="#">
-                  <img src="./assets/images/Aralia.webp" alt="Aralia Golden Plant" loading="lazy" width="800"
-                    height="1034" class="w-100">
-                </a>
-  
-                <div class="card-actions">
-  
-                  <button class="card-action-btn" aria-label="Quick view">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-  
-                  <button class="card-action-btn cart-btn">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-  
-                    <p>Add to Cart</p>
-                  </button>
-  
-                  <button class="card-action-btn" aria-label="Add to Whishlist">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-  
-                </div>
-  
-              </figure>
-  
-              <div class="card-content">
-                <h3 class="h4 card-title">
-                  <a href="#">Aralia Golden Plant</a>
-                </h3>
-  
-                <div class="card-price">
-                  <data value="300">&#x20b9;300</data>
-                </div>
-              </div>
-  
-            </div>
-          </li>
 
-       
-       
-      </ul>
 
-     
-
-    </div>
-  </section>
-    
-  <!-- 
+     <!-- 
     - #FOOTER
   -->
 
@@ -546,7 +242,7 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">
+          <a href="#" class="logo1">
             <img src="./assets/images/logoeverleaf.svg" alt="logo">
           </a>
 
@@ -644,7 +340,7 @@
           </li>
 
         </ul>
-
+          <div id="down1"></div>
         <ul class="footer-list">
 
           <li>
@@ -700,21 +396,15 @@
 
   </footer>
 
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
+<!-- 
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    
+
+    <!-- link js  -->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
