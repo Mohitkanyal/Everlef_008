@@ -558,7 +558,7 @@ header{
     position: absolute;
     top: -5px;
     right: 0;
-    background: var(--background, var(--white));
+    background: var(--background, var(--eerie-black));
     width: 20px;
     height: 20px;
     display: grid;
